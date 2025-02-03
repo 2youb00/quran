@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react"
 import { useParams, useLocation } from "react-router-dom"
 import axios from "axios"
-import { Bookmark, BookmarkCheck, Play, Pause, ArrowLeft } from "lucide-react"
+import { Bookmark, Check, Play, Pause, ArrowLeft } from "lucide-react"
 import { audioPlayer } from "../lib/audio-player"
 
 export default function QuranReader() {
@@ -128,7 +128,7 @@ export default function QuranReader() {
                     className="p-2 rounded-full hover:bg-emerald-100 dark:hover:bg-emerald-900"
                   >
                     {isBookmarked(ayah) ? (
-                      <BookmarkCheck className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
+                      <Check className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
                     ) : (
                       <Bookmark className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
                     )}
