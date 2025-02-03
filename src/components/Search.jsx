@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 import axios from "axios"
-import { Bookmark, BookmarkCheck } from "lucide-react"
+import { Bookmark, Check } from "lucide-react"
 
 export default function Search() {
   const [query, setQuery] = useState("")
@@ -72,7 +72,7 @@ export default function Search() {
 
   return (
     <div className="w-full max-w-2xl mx-auto bg-white dark:bg-gray-800 shadow-md rounded-lg p-6">
-      <h2 className="text-2xl font-bold mb-4 text-gray-800 dark:text-white text-right">ابحث في القرآن</h2>
+      <h2 className="text-2xl font-bold mb-4 text-gray-800 dark:text-white text-right">ابحث ��ي القرآن</h2>
       <form onSubmit={handleSearch} className="space-y-4">
         <div className="flex space-x-2">
           <select
@@ -106,7 +106,7 @@ export default function Search() {
             <div className="text-right">
               <div className="flex justify-between items-center mb-2">
                 <button onClick={() => toggleBookmark(result)} className="text-green-500 hover:text-green-600">
-                  {isBookmarked(result) ? <BookmarkCheck size={24} /> : <Bookmark size={24} />}
+                  {isBookmarked(result) ? <Check size={24} /> : <Bookmark size={24} />}
                 </button>
                 <p
                   className="font-arabic text-2xl cursor-pointer"
