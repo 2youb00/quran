@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased text-gray-900 dark:text-white;
+  }
+}
+
+
+
+.font-arabic {
+  font-family: "Scheherazade New", serif;
+  line-height: 2;
+}
+
